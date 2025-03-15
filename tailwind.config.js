@@ -1,0 +1,205 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        }
+      },
+      boxShadow: {
+        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+        none: 'none',
+      },
+      borderRadius: {
+        'none': '0',
+        'sm': '0.125rem',
+        DEFAULT: '0.25rem',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+        'full': '9999px',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '65ch',
+            color: 'var(--tw-prose-body)',
+            '[class~="lead"]': {
+              color: 'var(--tw-prose-lead)',
+            },
+            a: {
+              color: 'var(--tw-prose-links)',
+              textDecoration: 'underline',
+              fontWeight: '500',
+            },
+            strong: {
+              color: 'var(--tw-prose-bold)',
+              fontWeight: '600',
+            },
+            ol: {
+              listStyleType: 'decimal',
+            },
+            ul: {
+              listStyleType: 'disc',
+            },
+            hr: {
+              borderColor: 'var(--tw-prose-hr)',
+              borderTopWidth: 1,
+            },
+            blockquote: {
+              fontWeight: '500',
+              fontStyle: 'italic',
+              color: 'var(--tw-prose-quotes)',
+              borderLeftWidth: '0.25rem',
+              borderLeftColor: 'var(--tw-prose-quote-borders)',
+              quotes: '"\\201C""\\201D""\\2018""\\2019"',
+            },
+            h1: {
+              color: 'var(--tw-prose-headings)',
+              fontWeight: '800',
+              fontSize: 'em(36px)',
+              marginTop: '0',
+              marginBottom: 'em(32px)',
+              lineHeight: '1.1111111',
+            },
+            h2: {
+              color: 'var(--tw-prose-headings)',
+              fontWeight: '700',
+              fontSize: 'em(24px)',
+              marginTop: 'em(48px)',
+              marginBottom: 'em(24px)',
+              lineHeight: '1.3333333',
+            },
+            h3: {
+              color: 'var(--tw-prose-headings)',
+              fontWeight: '600',
+              fontSize: 'em(20px)',
+              marginTop: 'em(32px)',
+              marginBottom: 'em(12px)',
+              lineHeight: '1.6',
+            },
+            h4: {
+              color: 'var(--tw-prose-headings)',
+              fontWeight: '600',
+              marginTop: 'em(24px)',
+              marginBottom: 'em(8px)',
+              lineHeight: '1.5',
+            },
+            code: {
+              color: 'var(--tw-prose-code)',
+              fontWeight: '600',
+              fontSize: 'em(14px)',
+            },
+            'code::before': {
+              content: '"`"',
+            },
+            'code::after': {
+              content: '"`"',
+            },
+            pre: {
+              color: 'var(--tw-prose-pre-code)',
+              backgroundColor: 'var(--tw-prose-pre-bg)',
+              overflowX: 'auto',
+              fontWeight: '400',
+              fontSize: 'em(14px)',
+              lineHeight: '1.7142857',
+              marginTop: 'em(24px)',
+              marginBottom: 'em(24px)',
+              borderRadius: 'em(6px)',
+              paddingTop: 'em(12px)',
+              paddingRight: 'em(16px)',
+              paddingBottom: 'em(12px)',
+              paddingLeft: 'em(16px)',
+            },
+            'pre code': {
+              backgroundColor: 'transparent',
+              borderWidth: '0',
+              borderRadius: '0',
+              padding: '0',
+              fontWeight: 'inherit',
+              color: 'inherit',
+              fontSize: 'inherit',
+              fontFamily: 'inherit',
+              lineHeight: 'inherit',
+            },
+            'pre code::before': {
+              content: 'none',
+            },
+            'pre code::after': {
+              content: 'none',
+            },
+            table: {
+              width: '100%',
+              tableLayout: 'auto',
+              textAlign: 'left',
+              marginTop: 'em(32px)',
+              marginBottom: 'em(32px)',
+            },
+            thead: {
+              borderBottomWidth: '1px',
+              borderBottomColor: 'var(--tw-prose-th-borders)',
+            },
+            'thead th': {
+              color: 'var(--tw-prose-headings)',
+              fontWeight: '600',
+              verticalAlign: 'bottom',
+              paddingRight: 'em(8px)',
+              paddingBottom: 'em(8px)',
+              paddingLeft: 'em(8px)',
+            },
+            'tbody tr': {
+              borderBottomWidth: '1px',
+              borderBottomColor: 'var(--tw-prose-td-borders)',
+            },
+            'tbody tr:last-child': {
+              borderBottomWidth: '0',
+            },
+            'tbody td': {
+              verticalAlign: 'baseline',
+              paddingTop: 'em(8px)',
+              paddingRight: 'em(8px)',
+              paddingBottom: 'em(8px)',
+              paddingLeft: 'em(8px)',
+            },
+          },
+        },
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+} 

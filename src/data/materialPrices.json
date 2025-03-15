@@ -1,0 +1,46 @@
+{
+  "defaultPricePerInch": 1.0,
+  "materialTypes": [
+    {
+      "identifier": "82-10",
+      "pricePerInch": 2.0,
+      "description": "82-10 材料"
+    },
+    {
+      "identifier": "vinyl",
+      "pricePerInch": 1.5,
+      "description": "乙烯基材料"
+    },
+    {
+      "identifier": "aluminum",
+      "pricePerInch": 2.5,
+      "description": "铝材"
+    },
+    {
+      "identifier": "wood",
+      "pricePerInch": 1.8,
+      "description": "木材"
+    },
+    {
+      "identifier": "fiberglass",
+      "pricePerInch": 3.0,
+      "description": "玻璃钢"
+    },
+    {
+      "identifier": "tempered",
+      "pricePerInch": 2.2,
+      "description": "钢化玻璃"
+    },
+    {
+      "identifier": "lowE",
+      "pricePerInch": 2.8,
+      "description": "低辐射玻璃"
+    }
+  ],
+  "specialPrices": {
+    "colonial-grid": 45.0,
+    "prairie-grid": 65.0,
+    "diamond-grid": 85.0,
+    "custom-grid": 95.0
+  }
+} 
